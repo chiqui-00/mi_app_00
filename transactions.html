@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones - Mi Billetera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Billetera</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="transactions.html">Transacciones</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Realizar Transacción</h2>
+        <form id="transactionForm">
+            <label for="transactionType">Tipo de Transacción:</label>
+            <select id="transactionType" name="transactionType">
+                <option value="deposit">Depósito</option>
+                <option value="withdraw">Retiro</option>
+            </select>
+            <label for="amount">Monto:</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+            <label for="description">Descripción:</label>
+            <input type="text" id="description" name="description" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Historial de Transacciones</h2>
+        <ul id="transactionList"></ul>
+        <p id="currentBalance">Current Balance: $0.00</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Billetera</p>
+    </footer>
+    <script src="transactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Billetera Digital</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Billetera Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#transactions">Transacciones</a></li>
+                <li><a href="#employees">Empleados</a></li>
+                <li><a href="#settings">Configuración</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="balance">
+            <h2>Saldo Actual</h2>
+            <p id="currentBalance">$0.00</p>
+        </section>
+        <section id="transactions">
+            <h2>Transacciones Recientes</h2>
+            <ul id="transactionList">
+                <!-- Transactions will be dynamically added here -->
+            </ul>
+        </section>
+        <section id="employees">
+            <h2>Distribución a Empleados</h2>
+            <form id="employeeForm">
+                <label for="employeeName">Nombre del Empleado:</label>
+                <input type="text" id="employeeName" required>
+                <label for="amount">Monto:</label>
+                <input type="number" id="amount" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Billetera Digital</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>
